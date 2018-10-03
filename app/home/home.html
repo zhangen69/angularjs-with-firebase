@@ -1,10 +1,6 @@
 <p>Home Page</p>
 <p>{{ home.message }}, APP!</p>
 
-<button ng-click="home.getRestaurants()">Get Restaurants</button>
-
 <div ng-repeat="restaurant in home.restaurants">
-    restaurant: {{restaurant.name}}
+    Restaurant {{ $index + 1 }}: {{restaurant.name}}
 </div>
-
-Data: {{ data | json}}

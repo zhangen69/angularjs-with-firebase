@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "fir-weaver-pwa-app",
     "testing": "fir-weaver-pwa-app"
   }
 }
