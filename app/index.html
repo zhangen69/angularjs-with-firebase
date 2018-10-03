@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="app" class="ng-cloak">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome AngularJs App with Firebase</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/angular/angular-csp.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body ng-controller="app-main-controller">
+    <div class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularJs App with Firebase</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div ui-view></div>
+    </div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.5.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.5.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-storage.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+
+    <!-- <script src="//unpkg.com/navigo@6"></script> -->
+    
+    <!-- include javascrip library files -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angularfire/dist/angularfire.min.js"></script>
+    <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="./node_modules/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootbox/bootbox.min.js"></script>
+    <script src="./node_modules/moment/min/moment.min.js"></script>
+    <script src="./node_modules/underscore/underscore-min.js"></script>
+    <!-- custom javascript files -->
+    <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controller.js"></script>
+  </body>
+</html>
