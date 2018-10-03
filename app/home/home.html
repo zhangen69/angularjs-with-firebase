@@ -1,6 +1,9 @@
 <p>Home Page</p>
 <p>{{ home.message }}, APP!</p>
 
-<div ng-repeat="restaurant in home.restaurants">
+<h5>Restaurants</h5>
+<div ng-if="home.restaurants.length > 0" ng-repeat="restaurant in home.restaurants">
     Restaurant {{ $index + 1 }}: {{restaurant.name}}
 </div>
+
+<i class="fas fa-sync fa-spin fa-3x" ng-if="!home.restaurants.length"></i>

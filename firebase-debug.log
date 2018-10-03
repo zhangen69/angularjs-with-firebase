@@ -46,3 +46,35 @@
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2018-10-03T15:23:31.779Z] ----------------------------------------------------------------------
+[debug] [2018-10-03T15:23:31.781Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jacob\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-10-03T15:23:31.781Z] CLI Version:   4.0.2
+[debug] [2018-10-03T15:23:31.781Z] Platform:      win32
+[debug] [2018-10-03T15:23:31.781Z] Node Version:  v10.6.0
+[debug] [2018-10-03T15:23:31.782Z] Time:          Wed Oct 03 2018 23:23:31 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-03T15:23:31.782Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-03T15:23:31.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-03T15:23:31.790Z] > authorizing via signed-in user
+[debug] [2018-10-03T15:23:31.792Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-weaver-pwa-app  
+  
+ Wed Oct 03 2018 23:23:31 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-03T15:23:32.801Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-03T15:23:32.803Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-weaver-pwa-app/tokens  
+  
+ Wed Oct 03 2018 23:23:32 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-03T15:23:33.579Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-03T15:23:33.580Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-weaver-pwa-app  
+  
+ Wed Oct 03 2018 23:23:33 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-03T15:23:34.860Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\_Projects\angularjs-with-firebase'...
+[info] 
+[debug] [2018-10-03T15:23:34.864Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/381435042864/clients/_:getWebAppConfig  
+  
+ Wed Oct 03 2018 23:23:34 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-03T15:23:35.238Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app
+[info] +  hosting: Local server: http://localhost:5000
+

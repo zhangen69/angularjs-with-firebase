@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "@uirouter/angularjs": "^1.0.20",
     "angular": "^1.7.4",
     "angularfire": "^2.3.0",
