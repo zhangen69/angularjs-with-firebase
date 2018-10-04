@@ -5,10 +5,24 @@ app.controller('app-rating-controller', ['$scope', '$state', function($scope, $s
     var db = firebase.firestore();
 
     if (!!$state.params.id) {
-        db.collection('restaurants').doc($state.params.id).get().then(doc => {
-            $scope.$apply(() => {
-                vm.restaurant = doc.data();
-            });
+        var ref = db.collection("restaurants");
+        ref.doc($state.params.id).get().then(function(doc) {
+            var data = doc.data();
+            data.id = doc.id;
+            data.ratings = [];
+            
+            ref.doc($state.params.id).collection('ratings').onSnapshot(function(ratings) {
+                ratings.forEach(rating => {
+                    var item = rating.data();
+                    item.datetime = moment.unix(item.timestamp.seconds).format("DD MMM YYYY, HH:mm");
+                    data.ratings.push(item);
+                })
+                
+                $scope.$apply(() => {
+                    vm.restaurant = data;
+                });
+            
+            })
         });
     }
 }]);

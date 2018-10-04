@@ -15,18 +15,38 @@
         align-items: center;
         height: 100%;
     }
+
+    .rating-star-group > .checked {
+        color: orange;
+    }
+
+    .rating-datetime {
+        font-size: small;
+    }
 </style>
 
 <div class="jumbotron jumbotron-fluid" ng-if="!!rating.restaurant">
     <div class="container">
         <div class="bg-img"></div>
         <h1 class="display-4" ng-bind="rating.restaurant.name"></h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </div>
 </div>
+
+<ul class="list-group" ng-if="rating.restaurant.ratings.length > 0">
+    <li class="list-group-item" ng-repeat="rating in rating.restaurant.ratings">
+        <div class="rating-star-group">
+            <span class="fa fa-star" ng-class="{'checked': rating.rating > 0}"></span>
+            <span class="fa fa-star" ng-class="{'checked': rating.rating > 1}"></span>
+            <span class="fa fa-star" ng-class="{'checked': rating.rating > 2}"></span>
+            <span class="fa fa-star" ng-class="{'checked': rating.rating > 3}"></span>
+            <span class="fa fa-star" ng-class="{'checked': rating.rating > 4}"></span>
+        </div>
+        <span ng-bind="rating.userName"></span>
+        <span ng-bind="rating.text"></span>
+        <div class="rating-datetime" ng-bind="rating.datetime"></div>
+    </li>
+</ul>
 
 <div class="loading">
     <i class="fas fa-sync fa-spin fa-3x" ng-if="!rating.restaurant"></i>
 </div>
-
-{{ rating.restaurant | json }}
