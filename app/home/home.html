@@ -1,9 +1,36 @@
+<style>
+    .card-img {
+        display: flex;
+        justify-content: center;
+        background-color: #f5f5f5;
+        padding: 10px 0;
+    }
+
+    .card-img > img {
+        width: auto;
+    }
+</style>
+
 <p>Home Page</p>
 <p>{{ home.message }}, APP!</p>
 
 <h5>Restaurants</h5>
-<div ng-if="home.restaurants.length > 0" ng-repeat="restaurant in home.restaurants">
-    Restaurant {{ $index + 1 }}: {{restaurant.name}}
+<div class="card-columns">
+    <div class="card" ng-if="home.restaurants.length > 0" ng-repeat="restaurant in home.restaurants">
+        <div class="card-img">
+            <img class="card-img-top" ng-src="{{restaurant.photo}}" alt="Card image cap" height="150">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" ng-bind="restaurant.name"></h5>
+          <p class="card-text">Price: RM <span ng-bind="restaurant.price | number: 2"></span></p>
+          <p class="card-text">Category: <span ng-bind="restaurant.category"></span></p>
+          <p class="card-text">Avg Rating: <span ng-bind="restaurant.avgRating"></span></p>
+          <p class="card-text">City: <span ng-bind="restaurant.city"></span></p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Rate it</a>
+      </div>
 </div>
 
 <i class="fas fa-sync fa-spin fa-3x" ng-if="!home.restaurants.length"></i>
