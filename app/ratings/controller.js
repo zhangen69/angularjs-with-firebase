@@ -4,8 +4,6 @@ app.controller('app-rating-controller', ['$scope', '$state', function($scope, $s
     var vm = this;
     var db = firebase.firestore();
 
-    vm.restaurant = {};
-
     if (!!$state.params.id) {
         db.collection('restaurants').doc($state.params.id).get().then(doc => {
             $scope.$apply(() => {

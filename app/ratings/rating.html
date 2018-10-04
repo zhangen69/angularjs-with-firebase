@@ -1,1 +1,32 @@
+<style>
+    .jumbotron {
+        color: white;
+        background: url('{{rating.restaurant.photo}}') no-repeat center center fixed;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+
+<div class="jumbotron jumbotron-fluid" ng-if="!!rating.restaurant">
+    <div class="container">
+        <div class="bg-img"></div>
+        <h1 class="display-4" ng-bind="rating.restaurant.name"></h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+</div>
+
+<div class="loading">
+    <i class="fas fa-sync fa-spin fa-3x" ng-if="!rating.restaurant"></i>
+</div>
+
 {{ rating.restaurant | json }}
