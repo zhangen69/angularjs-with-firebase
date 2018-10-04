@@ -23,10 +23,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             }
         })
 
-        // about states
-        .state('about', {
-            url: '/about',
-            template: '<div>About Page</div>'
+        // rating states
+        .state('rating', {
+            url: '/rating/:id',
+            templateUrl: './ratings/rating.html',
+            controller: 'app-rating-controller as rating',
+            params: { id: null },
+            lazyLoad: function ($transition$) {
+                return $transition$.injector().get('$ocLazyLoad').load('./ratings/controller.js');
+            }
         })
     ;
 }]);

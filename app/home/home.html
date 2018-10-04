@@ -15,8 +15,8 @@
 <p>{{ home.message }}, APP!</p>
 
 <h5>Restaurants</h5>
-<div class="card-columns">
-    <div class="card" ng-if="home.restaurants.length > 0" ng-repeat="restaurant in home.restaurants">
+<div class="card-columns" ng-if="home.restaurants.length > 0">
+    <div class="card" ng-repeat="restaurant in home.restaurants">
         <div class="card-img">
             <img class="card-img-top" ng-src="{{restaurant.photo}}" alt="Card image cap" height="150">
         </div>
@@ -27,9 +27,9 @@
           <p class="card-text">Avg Rating: <span ng-bind="restaurant.avgRating"></span></p>
           <p class="card-text">City: <span ng-bind="restaurant.city"></span></p>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Rate it</a>
+        <div class="card-footer">
+          <a ui-sref="rating({ id: restaurant.id })" class="btn btn-primary">Rate it</a>
+        </div>
       </div>
 </div>
 

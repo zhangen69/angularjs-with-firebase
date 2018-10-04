@@ -10,12 +10,14 @@ app.controller('app-home-controller', ['$scope', function($scope) {
     vm.getRestaurants = function() {
         let restaurants = db.collection('restaurants');
 
-        restaurants.get().then((querySnapshot) => {
+        restaurants.get().then(snapshot => {
             vm.restaurants = [];
 
-            querySnapshot.forEach((doc) => {
+            snapshot.forEach((doc) => {
                 $scope.$apply(function(){
-                    vm.restaurants.push(doc.data()) ;
+                    const data = doc.data();
+                    data.id = doc.id;
+                    vm.restaurants.push(data);
                 });
             });
     
