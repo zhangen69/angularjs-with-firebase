@@ -22,7 +22,5 @@ app.controller('app-home-controller', ['$scope', function($scope) {
             });
     
         });
-    }
-
-    vm.getRestaurants();
+    }();
 }]);

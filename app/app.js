@@ -3,7 +3,6 @@
 var app = angular.module('app', [
     'ui.router', 
     'oc.lazyLoad', 
-    // 'firebase'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -26,7 +25,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         // rating states
         .state('rating', {
             url: '/rating/:id',
-            templateUrl: './ratings/rating.html',
+            templateUrl: './ratings/list.html',
             controller: 'app-rating-controller as rating',
             params: { id: null },
             lazyLoad: function ($transition$) {

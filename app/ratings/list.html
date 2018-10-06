@@ -23,6 +23,20 @@
     .rating-datetime {
         font-size: small;
     }
+
+    .add-rating-btn {
+        position: absolute;
+        right: 0;
+        border-radius: 100%;
+        z-index: 2;
+        top: 235px;
+    }
+
+    @media (max-width: 576px) {
+        .add-rating-btn {
+            top: 171px;
+        }
+    }
 </style>
 
 <div class="jumbotron jumbotron-fluid" ng-if="!!rating.restaurant">
@@ -31,6 +45,10 @@
         <h1 class="display-4" ng-bind="rating.restaurant.name"></h1>
     </div>
 </div>
+
+<button type="button" class="btn btn-primary add-rating-btn" ng-if="!!rating.restaurant" ng-click="rating.addRating()">
+    <i class="fas fa-plus"></i>
+</button>
 
 <ul class="list-group" ng-if="rating.restaurant.ratings.length > 0">
     <li class="list-group-item" ng-repeat="rating in rating.restaurant.ratings">
@@ -47,10 +65,10 @@
     </li>
 </ul>
 
-<div ng-if="!rating.restaurant.ratings.length">
-    Not found rating yet.
+<div ng-if="!!rating.restaurant && !rating.restaurant.ratings.length">
+    <p>Not found rating yet.</p>
 </div>
 
-<div class="loading">
-    <i class="fas fa-sync fa-spin fa-3x" ng-if="!rating.restaurant"></i>
+<div class="loading" ng-if="!rating.restaurant">
+    <i class="fas fa-sync fa-spin fa-3x"></i>
 </div>

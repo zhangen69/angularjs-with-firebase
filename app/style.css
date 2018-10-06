@@ -20,4 +20,5 @@ body {
 
 .app-content {
   padding: 15px 0;
+  position: relative;
 }
