@@ -47,6 +47,10 @@
     </li>
 </ul>
 
+<div ng-if="!rating.restaurant.ratings.length">
+    Not found rating yet.
+</div>
+
 <div class="loading">
     <i class="fas fa-sync fa-spin fa-3x" ng-if="!rating.restaurant"></i>
 </div>

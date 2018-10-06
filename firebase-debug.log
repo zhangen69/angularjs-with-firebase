@@ -1,104 +1,43 @@
-[debug] [2018-10-03T09:04:29.258Z] ----------------------------------------------------------------------
-[debug] [2018-10-03T09:04:29.261Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-10-03T09:04:29.261Z] CLI Version:   4.2.1
-[debug] [2018-10-03T09:04:29.261Z] Platform:      win32
-[debug] [2018-10-03T09:04:29.261Z] Node Version:  v10.4.1
-[debug] [2018-10-03T09:04:29.280Z] Time:          Wed Oct 03 2018 17:04:29 GMT+0800 (GMT+08:00)
-[debug] [2018-10-03T09:04:29.280Z] ----------------------------------------------------------------------
+[debug] [2018-10-05T13:38:30.788Z] ----------------------------------------------------------------------
+[debug] [2018-10-05T13:38:30.791Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jacob\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-10-05T13:38:30.791Z] CLI Version:   4.0.2
+[debug] [2018-10-05T13:38:30.791Z] Platform:      win32
+[debug] [2018-10-05T13:38:30.791Z] Node Version:  v10.6.0
+[debug] [2018-10-05T13:38:30.792Z] Time:          Fri Oct 05 2018 21:38:30 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:30.792Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-10-03T09:04:29.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-03T09:04:29.295Z] > authorizing via signed-in user
-[debug] [2018-10-03T09:04:29.297Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-weaver-pwa-app  
- 
-[debug] [2018-10-03T09:04:31.296Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-03T09:04:31.297Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-weaver-pwa-app  
- 
-[debug] [2018-10-03T09:04:33.259Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\User\Desktop\_Projects\angularjs-with-firebase'...
-[info] 
-[debug] [2018-10-03T09:04:33.263Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/381435042864/clients/_:getWebAppConfig  
- 
-[debug] [2018-10-03T09:04:34.042Z] <<< HTTP RESPONSE 200
-[info] i  hosting[fir-weaver-pwa-app]: Serving hosting files from: app
-[info] +  hosting[fir-weaver-pwa-app]: Local server: http://localhost:5000
-[debug] [2018-10-03T09:19:23.374Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T09:19:23.531Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T09:19:23.602Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T09:19:23.603Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T09:19:23.604Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T09:19:23.606Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
-    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-03T15:23:31.779Z] ----------------------------------------------------------------------
-[debug] [2018-10-03T15:23:31.781Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jacob\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-10-03T15:23:31.781Z] CLI Version:   4.0.2
-[debug] [2018-10-03T15:23:31.781Z] Platform:      win32
-[debug] [2018-10-03T15:23:31.781Z] Node Version:  v10.6.0
-[debug] [2018-10-03T15:23:31.782Z] Time:          Wed Oct 03 2018 23:23:31 GMT+0800 (Singapore Standard Time)
-[debug] [2018-10-03T15:23:31.782Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-10-03T15:23:31.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-03T15:23:31.790Z] > authorizing via signed-in user
-[debug] [2018-10-03T15:23:31.792Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-weaver-pwa-app  
+[debug] [2018-10-05T13:38:30.800Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-05T13:38:30.801Z] > authorizing via signed-in user
+[debug] [2018-10-05T13:38:30.802Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-05T13:38:30.802Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/3_6lR4-CaCX-glRFG-n5e5MHHmF1PCA2mffHZ9V-mNM',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Oct 05 2018 21:38:30 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:30.938Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T13:38:30.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-weaver-pwa-app  
   
- Wed Oct 03 2018 23:23:31 GMT+0800 (Singapore Standard Time)
-[debug] [2018-10-03T15:23:32.801Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-03T15:23:32.803Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-weaver-pwa-app/tokens  
+ Fri Oct 05 2018 21:38:30 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:31.911Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T13:38:31.912Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-weaver-pwa-app/tokens  
   
- Wed Oct 03 2018 23:23:32 GMT+0800 (Singapore Standard Time)
-[debug] [2018-10-03T15:23:33.579Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-03T15:23:33.580Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-weaver-pwa-app  
+ Fri Oct 05 2018 21:38:31 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:32.640Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T13:38:32.641Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-weaver-pwa-app  
   
- Wed Oct 03 2018 23:23:33 GMT+0800 (Singapore Standard Time)
-[debug] [2018-10-03T15:23:34.860Z] <<< HTTP RESPONSE 200
+ Fri Oct 05 2018 21:38:32 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:33.900Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\_Projects\angularjs-with-firebase'...
 [info] 
-[debug] [2018-10-03T15:23:34.864Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/381435042864/clients/_:getWebAppConfig  
+[debug] [2018-10-05T13:38:33.904Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/381435042864/clients/_:getWebAppConfig  
   
- Wed Oct 03 2018 23:23:34 GMT+0800 (Singapore Standard Time)
-[debug] [2018-10-03T15:23:35.238Z] <<< HTTP RESPONSE 200
+ Fri Oct 05 2018 21:38:33 GMT+0800 (Singapore Standard Time)
+[debug] [2018-10-05T13:38:34.395Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: app
 [info] +  hosting: Local server: http://localhost:5000
 
-[debug] [2018-10-04T03:30:42.018Z] ----------------------------------------------------------------------
-[debug] [2018-10-04T03:30:42.021Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-10-04T03:30:42.021Z] CLI Version:   4.2.1
-[debug] [2018-10-04T03:30:42.021Z] Platform:      win32
-[debug] [2018-10-04T03:30:42.021Z] Node Version:  v10.4.1
-[debug] [2018-10-04T03:30:42.022Z] Time:          Thu Oct 04 2018 11:30:42 GMT+0800 (GMT+08:00)
-[debug] [2018-10-04T03:30:42.022Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-10-04T03:30:42.037Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-04T03:30:42.038Z] > authorizing via signed-in user
-[debug] [2018-10-04T03:30:42.040Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-weaver-pwa-app  
- 
-[debug] [2018-10-04T03:30:43.015Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-04T03:30:43.016Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-weaver-pwa-app  
- 
-[debug] [2018-10-04T03:30:44.269Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\User\Desktop\_Projects\angularjs-with-firebase'...
-[info] 
-[debug] [2018-10-04T03:30:44.271Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/381435042864/clients/_:getWebAppConfig  
- 
-[debug] [2018-10-04T03:30:44.643Z] <<< HTTP RESPONSE 200
-[info] i  hosting[fir-weaver-pwa-app]: Serving hosting files from: app
-[info] +  hosting[fir-weaver-pwa-app]: Local server: http://localhost:5000
